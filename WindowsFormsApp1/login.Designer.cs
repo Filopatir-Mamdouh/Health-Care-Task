@@ -37,11 +37,11 @@
             this.password = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,6 +124,21 @@
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 50;
+            this.guna2Elipse2.TargetControl = this.button1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(523, 457);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 27);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Reset";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.close;
@@ -153,21 +168,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 50;
-            this.guna2Elipse2.TargetControl = this.button1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(523, 457);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 27);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Reset";
             // 
             // login
             // 
@@ -207,7 +207,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox username;
@@ -215,6 +214,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
