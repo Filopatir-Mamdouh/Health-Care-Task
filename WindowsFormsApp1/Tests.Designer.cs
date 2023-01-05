@@ -39,10 +39,10 @@
             this.deletebtn = new System.Windows.Forms.Button();
             this.updatebtn = new System.Windows.Forms.Button();
             this.savebtn = new System.Windows.Forms.Button();
-            this.patgen = new System.Windows.Forms.TextBox();
+            this.testcost = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.patname = new System.Windows.Forms.TextBox();
+            this.testname = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -140,6 +140,7 @@
             this.testlist.ThemeStyle.RowsStyle.Height = 26;
             this.testlist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.testlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.testlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.testlist_CellContentClick);
             // 
             // label12
             // 
@@ -158,10 +159,10 @@
             this.panel3.Controls.Add(this.deletebtn);
             this.panel3.Controls.Add(this.updatebtn);
             this.panel3.Controls.Add(this.savebtn);
-            this.panel3.Controls.Add(this.patgen);
+            this.panel3.Controls.Add(this.testcost);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.patname);
+            this.panel3.Controls.Add(this.testname);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(14, 12);
             this.panel3.Name = "panel3";
@@ -178,6 +179,7 @@
             this.deletebtn.TabIndex = 22;
             this.deletebtn.Text = "Delete";
             this.deletebtn.UseVisualStyleBackColor = false;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // updatebtn
             // 
@@ -189,6 +191,7 @@
             this.updatebtn.TabIndex = 21;
             this.updatebtn.Text = "Update";
             this.updatebtn.UseVisualStyleBackColor = false;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
             // 
             // savebtn
             // 
@@ -200,14 +203,15 @@
             this.savebtn.TabIndex = 20;
             this.savebtn.Text = "Save";
             this.savebtn.UseVisualStyleBackColor = false;
+            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
             // 
-            // patgen
+            // testcost
             // 
-            this.patgen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patgen.Location = new System.Drawing.Point(20, 141);
-            this.patgen.Name = "patgen";
-            this.patgen.Size = new System.Drawing.Size(282, 34);
-            this.patgen.TabIndex = 15;
+            this.testcost.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testcost.Location = new System.Drawing.Point(20, 141);
+            this.testcost.Name = "testcost";
+            this.testcost.Size = new System.Drawing.Size(282, 34);
+            this.testcost.TabIndex = 15;
             // 
             // label9
             // 
@@ -231,13 +235,13 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Manage Patients";
             // 
-            // patname
+            // testname
             // 
-            this.patname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patname.Location = new System.Drawing.Point(20, 70);
-            this.patname.Name = "patname";
-            this.patname.Size = new System.Drawing.Size(282, 34);
-            this.patname.TabIndex = 6;
+            this.testname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testname.Location = new System.Drawing.Point(20, 70);
+            this.testname.Name = "testname";
+            this.testname.Size = new System.Drawing.Size(282, 34);
+            this.testname.TabIndex = 6;
             // 
             // label6
             // 
@@ -319,6 +323,7 @@
             this.diagbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.diagbtn.TabIndex = 7;
             this.diagbtn.TabStop = false;
+            this.diagbtn.Click += new System.EventHandler(this.diagbtn_Click);
             // 
             // label3
             // 
@@ -361,6 +366,7 @@
             this.patbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.patbtn.TabIndex = 3;
             this.patbtn.TabStop = false;
+            this.patbtn.Click += new System.EventHandler(this.patbtn_Click);
             // 
             // close
             // 
@@ -371,6 +377,7 @@
             this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.close.TabIndex = 18;
             this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // logoutbtn
             // 
@@ -381,6 +388,7 @@
             this.logoutbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoutbtn.TabIndex = 16;
             this.logoutbtn.TabStop = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // Tests
             // 
@@ -425,10 +433,10 @@
         private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.Button updatebtn;
         private System.Windows.Forms.Button savebtn;
-        private System.Windows.Forms.TextBox patgen;
+        private System.Windows.Forms.TextBox testcost;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox patname;
+        private System.Windows.Forms.TextBox testname;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox logoutbtn;
         private System.Windows.Forms.Label label1;
