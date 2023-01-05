@@ -65,6 +65,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.patlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.DOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.close = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).BeginInit();
@@ -75,6 +76,7 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -465,11 +467,22 @@
             this.DOB.TabIndex = 23;
             this.DOB.Value = new System.DateTime(2023, 1, 5, 3, 9, 21, 261);
             // 
+            // close
+            // 
+            this.close.Image = global::WindowsFormsApp1.Properties.Resources.close;
+            this.close.Location = new System.Drawing.Point(1264, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(38, 25);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.close.TabIndex = 13;
+            this.close.TabStop = false;
+            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 626);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.logoutbtn);
             this.Controls.Add(this.label1);
@@ -490,6 +503,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,5 +544,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2DateTimePicker DOB;
+        private System.Windows.Forms.PictureBox close;
     }
 }
