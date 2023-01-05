@@ -55,6 +55,7 @@ namespace WindowsFormsApp1
             Testname.SelectedIndex = -1;
             dcost.Text = "";
             result.Text = "";
+            key = 0;
         }
         private void savebtn_Click(object sender, EventArgs e)
         {
@@ -81,11 +82,11 @@ namespace WindowsFormsApp1
         int key = 0;
         private void dlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            patname.Text = dlist.SelectedRows[0].Cells[1].Value.ToString();
-            patgen.Text = dlist.SelectedRows[0].Cells[2].Value.ToString();
-            DOB.Text = dlist.SelectedRows[0].Cells[3].Value.ToString();
-            patphone.Text = dlist.SelectedRows[0].Cells[4].Value.ToString();
-            patadd.Text = dlist.SelectedRows[0].Cells[5].Value.ToString();
+            patname.SelectedItem = dlist.SelectedRows[0].Cells[2].Value.ToString();
+            result.Text = dlist.SelectedRows[0].Cells[5].Value.ToString();
+            dDate.Text = dlist.SelectedRows[0].Cells[1].Value.ToString();
+            dcost.Text = dlist.SelectedRows[0].Cells[4].Value.ToString();
+            Testname.SelectedItem = dlist.SelectedRows[0].Cells[3].Value.ToString();
             if (patname.Text == "")
             {
                 key = 0;
@@ -96,22 +97,22 @@ namespace WindowsFormsApp1
 
         private void updatebtn_Click(object sender, EventArgs e)
         {
-            string name = patname.Text;
-            string date = DOB.Value.ToString();
-            string phone = patphone.Text;
-            string add = patadd.Text;
-            if (name == "" || patgen.SelectedIndex == -1 || phone == "" || add == "" || key == 0)
+            if (patname.SelectedIndex == -1 || Testname.SelectedIndex == -1 || result.Text == "")
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                string gen = patgen.SelectedItem.ToString();
-                string query = "UPDATE Diagnosis SET patname= '{0}', patgen = '{1}', patdob= '{2}', patphone= '{3}', pataddress= '{4}' WHERE patid = {5}";
-                query = string.Format(query, name, gen, date, phone, add, key);
+                int name = Convert.ToInt32(patname.SelectedValue.ToString()); ;
+                string date = dDate.Value.ToString();
+                string r = result.Text;
+                int test = Convert.ToInt32(Testname.SelectedValue.ToString());
+                int cost = Convert.ToInt32(dcost.Text);
+                string query = "UPDATE Diagnosis SET diagdate = '{0}' , patient = {1} , test = {2} , cost = {3} , result = '{4}' WHERE diagid = {5})";
+                query = string.Format(query, date, name, test, cost, result,key);
                 con.setData(query);
                 ShowDiagnosis();
-                MessageBox.Show("Patient Updated Successfully!!");
+                MessageBox.Show("Diagnosis Updated Sucessfully!!");
                 clear();
             }
         }

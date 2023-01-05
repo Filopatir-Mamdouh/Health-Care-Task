@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         {
             testname.Text = "";
             testcost.Text = "";
+            key = 0;
         }
         private void savebtn_Click(object sender, EventArgs e)
         {

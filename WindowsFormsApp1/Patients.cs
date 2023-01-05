@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
             patgen.Text = "";
             patphone.Text = "";
             patadd.Text = "";
+            key = 0;
         }
         private void savebtn_Click(object sender, EventArgs e)
         {
