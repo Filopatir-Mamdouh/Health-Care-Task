@@ -47,26 +47,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.diagbtn = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Testbtn = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.patbtn = new System.Windows.Forms.PictureBox();
             this.close = new System.Windows.Forms.PictureBox();
             this.logoutbtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.diagbtn = new System.Windows.Forms.PictureBox();
-            this.Testbtn = new System.Windows.Forms.PictureBox();
-            this.patbtn = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.testlist)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patbtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -288,6 +288,17 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Dashboard";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.web_analysis;
+            this.pictureBox4.Location = new System.Drawing.Point(18, 373);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(90, 65);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -298,6 +309,16 @@
             this.label4.Size = new System.Drawing.Size(103, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Diagnosis";
+            // 
+            // diagbtn
+            // 
+            this.diagbtn.Image = global::WindowsFormsApp1.Properties.Resources.diagnosis;
+            this.diagbtn.Location = new System.Drawing.Point(18, 250);
+            this.diagbtn.Name = "diagbtn";
+            this.diagbtn.Size = new System.Drawing.Size(90, 65);
+            this.diagbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diagbtn.TabIndex = 7;
+            this.diagbtn.TabStop = false;
             // 
             // label3
             // 
@@ -310,6 +331,16 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Tests";
             // 
+            // Testbtn
+            // 
+            this.Testbtn.Image = global::WindowsFormsApp1.Properties.Resources.chemistry;
+            this.Testbtn.Location = new System.Drawing.Point(18, 134);
+            this.Testbtn.Name = "Testbtn";
+            this.Testbtn.Size = new System.Drawing.Size(90, 65);
+            this.Testbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Testbtn.TabIndex = 5;
+            this.Testbtn.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -320,6 +351,16 @@
             this.label2.Size = new System.Drawing.Size(84, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Patients";
+            // 
+            // patbtn
+            // 
+            this.patbtn.Image = global::WindowsFormsApp1.Properties.Resources.patient;
+            this.patbtn.Location = new System.Drawing.Point(19, 13);
+            this.patbtn.Name = "patbtn";
+            this.patbtn.Size = new System.Drawing.Size(90, 65);
+            this.patbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.patbtn.TabIndex = 3;
+            this.patbtn.TabStop = false;
             // 
             // close
             // 
@@ -340,46 +381,6 @@
             this.logoutbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoutbtn.TabIndex = 16;
             this.logoutbtn.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.web_analysis;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 373);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(90, 65);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // diagbtn
-            // 
-            this.diagbtn.Image = global::WindowsFormsApp1.Properties.Resources.diagnosis;
-            this.diagbtn.Location = new System.Drawing.Point(18, 250);
-            this.diagbtn.Name = "diagbtn";
-            this.diagbtn.Size = new System.Drawing.Size(90, 65);
-            this.diagbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diagbtn.TabIndex = 7;
-            this.diagbtn.TabStop = false;
-            // 
-            // Testbtn
-            // 
-            this.Testbtn.Image = global::WindowsFormsApp1.Properties.Resources.chemistry;
-            this.Testbtn.Location = new System.Drawing.Point(18, 134);
-            this.Testbtn.Name = "Testbtn";
-            this.Testbtn.Size = new System.Drawing.Size(90, 65);
-            this.Testbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Testbtn.TabIndex = 5;
-            this.Testbtn.TabStop = false;
-            // 
-            // patbtn
-            // 
-            this.patbtn.Image = global::WindowsFormsApp1.Properties.Resources.patient;
-            this.patbtn.Location = new System.Drawing.Point(19, 13);
-            this.patbtn.Name = "patbtn";
-            this.patbtn.Size = new System.Drawing.Size(90, 65);
-            this.patbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.patbtn.TabIndex = 3;
-            this.patbtn.TabStop = false;
             // 
             // Tests
             // 
@@ -402,12 +403,12 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patbtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -107,5 +107,35 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            login obj = new login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Testbtn_Click(object sender, EventArgs e)
+        {
+            Tests obj = new Tests();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void diagbtn_Click(object sender, EventArgs e)
+        {
+            Diagnosis obj = new Diagnosis();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not Working yet 😢");
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
