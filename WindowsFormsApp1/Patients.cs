@@ -86,8 +86,24 @@ namespace WindowsFormsApp1
                 query = string.Format(query, name, gen, date, phone, add , key);
                 con.setData(query);
                 ShowPatients();
-                MessageBox.Show("Patient Updated Sucessfully!!");
+                MessageBox.Show("Patient Updated Successfully!!");
                 clear();
+            }
+        }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
+            if(key == 0)
+            {
+                MessageBox.Show("Select A Row");
+            }
+            else
+            {
+                string query = "DELETE FROM Patients WHERE patid=" + key;
+                con.setData(query);
+                ShowPatients();
+                clear();
+                MessageBox.Show("Deleted Successfully!!");
             }
         }
 
