@@ -36,6 +36,8 @@
             this.dlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.result = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.deletebtn = new System.Windows.Forms.Button();
             this.updatebtn = new System.Windows.Forms.Button();
@@ -50,28 +52,26 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.diagbtn = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Testbtn = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.close = new System.Windows.Forms.PictureBox();
             this.logoutbtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.diagbtn = new System.Windows.Forms.PictureBox();
-            this.Testbtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.result = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlist)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -178,6 +178,25 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1072, 183);
             this.panel3.TabIndex = 0;
+            // 
+            // result
+            // 
+            this.result.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.result.Location = new System.Drawing.Point(329, 62);
+            this.result.Name = "result";
+            this.result.Size = new System.Drawing.Size(282, 34);
+            this.result.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SlateGray;
+            this.label1.Location = new System.Drawing.Point(324, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 25);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Result";
             // 
             // dDate
             // 
@@ -332,6 +351,16 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Dashboard";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.web_analysis;
+            this.pictureBox4.Location = new System.Drawing.Point(18, 373);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(90, 65);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -342,6 +371,16 @@
             this.label4.Size = new System.Drawing.Size(103, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Diagnosis";
+            // 
+            // diagbtn
+            // 
+            this.diagbtn.Image = global::WindowsFormsApp1.Properties.Resources.diagnosis;
+            this.diagbtn.Location = new System.Drawing.Point(18, 250);
+            this.diagbtn.Name = "diagbtn";
+            this.diagbtn.Size = new System.Drawing.Size(90, 65);
+            this.diagbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diagbtn.TabIndex = 7;
+            this.diagbtn.TabStop = false;
             // 
             // label3
             // 
@@ -354,6 +393,16 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Tests";
             // 
+            // Testbtn
+            // 
+            this.Testbtn.Image = global::WindowsFormsApp1.Properties.Resources.chemistry;
+            this.Testbtn.Location = new System.Drawing.Point(18, 134);
+            this.Testbtn.Name = "Testbtn";
+            this.Testbtn.Size = new System.Drawing.Size(90, 65);
+            this.Testbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Testbtn.TabIndex = 5;
+            this.Testbtn.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -364,6 +413,16 @@
             this.label2.Size = new System.Drawing.Size(84, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Patients";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.patient;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // close
             // 
@@ -385,65 +444,6 @@
             this.logoutbtn.TabIndex = 15;
             this.logoutbtn.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.web_analysis;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 373);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(90, 65);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // diagbtn
-            // 
-            this.diagbtn.Image = global::WindowsFormsApp1.Properties.Resources.diagnosis;
-            this.diagbtn.Location = new System.Drawing.Point(18, 250);
-            this.diagbtn.Name = "diagbtn";
-            this.diagbtn.Size = new System.Drawing.Size(90, 65);
-            this.diagbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diagbtn.TabIndex = 7;
-            this.diagbtn.TabStop = false;
-            // 
-            // Testbtn
-            // 
-            this.Testbtn.Image = global::WindowsFormsApp1.Properties.Resources.chemistry;
-            this.Testbtn.Location = new System.Drawing.Point(18, 134);
-            this.Testbtn.Name = "Testbtn";
-            this.Testbtn.Size = new System.Drawing.Size(90, 65);
-            this.Testbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Testbtn.TabIndex = 5;
-            this.Testbtn.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.patient;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // result
-            // 
-            this.result.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result.Location = new System.Drawing.Point(329, 62);
-            this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(282, 34);
-            this.result.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SlateGray;
-            this.label1.Location = new System.Drawing.Point(324, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 25);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Result";
-            // 
             // Diagnosis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -455,6 +455,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Diagnosis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diagnosis";
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -464,12 +465,12 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).EndInit();
             this.ResumeLayout(false);
 
         }

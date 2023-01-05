@@ -33,13 +33,13 @@ namespace WindowsFormsApp1
         private void savebtn_Click(object sender, EventArgs e)
         {
             string name = testname.Text;
-            int cost = Convert.ToInt32(testcost.Text);
-            if (name == "" || cost == null)
+            if (name == "" || testcost.Text == "")
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
+                int cost = Convert.ToInt32(testcost.Text);
                 string query = "INSERT INTO Tests Values( '{0}' , {1} )";
                 query = string.Format(query, name, cost);
                 con.setData(query);
@@ -64,14 +64,14 @@ namespace WindowsFormsApp1
         private void updatebtn_Click(object sender, EventArgs e)
         {
             string name = testname.Text;
-            int cost = Convert.ToInt32(testcost.Text);
-            if (name == "" || testcost == null || key == 0)
+            if (name == "" || testcost.Text == "" || key == 0)
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                string query = "UPDATE Tests SET testname= '{0}', testcost = {1} WHERE testid = {5}";
+                int cost = Convert.ToInt32(testcost.Text);
+                string query = "UPDATE Tests SET testname= '{0}', testcost = {1} WHERE testid = {2}";
                 query = string.Format(query, name, cost, key);
                 con.setData(query);
                 ShowTests();

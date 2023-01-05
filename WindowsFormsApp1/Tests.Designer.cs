@@ -402,6 +402,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tests";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tests";
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
