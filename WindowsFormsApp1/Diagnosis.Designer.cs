@@ -44,11 +44,9 @@
             this.savebtn = new System.Windows.Forms.Button();
             this.dcost = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.testname = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.patname = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,6 +59,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.close = new System.Windows.Forms.PictureBox();
             this.logoutbtn = new System.Windows.Forms.PictureBox();
+            this.Testname = new System.Windows.Forms.ComboBox();
+            this.patname = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlist)).BeginInit();
@@ -160,6 +160,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.patname);
+            this.panel3.Controls.Add(this.Testname);
             this.panel3.Controls.Add(this.result);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.dDate);
@@ -168,11 +170,9 @@
             this.panel3.Controls.Add(this.savebtn);
             this.panel3.Controls.Add(this.dcost);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.testname);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.patname);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(14, 12);
             this.panel3.Name = "panel3";
@@ -182,7 +182,7 @@
             // result
             // 
             this.result.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result.Location = new System.Drawing.Point(329, 62);
+            this.result.Location = new System.Drawing.Point(329, 68);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(282, 34);
             this.result.TabIndex = 25;
@@ -247,6 +247,7 @@
             // 
             // dcost
             // 
+            this.dcost.Enabled = false;
             this.dcost.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dcost.Location = new System.Drawing.Point(329, 141);
             this.dcost.Name = "dcost";
@@ -263,14 +264,6 @@
             this.label10.Size = new System.Drawing.Size(58, 25);
             this.label10.TabIndex = 16;
             this.label10.Text = "Cost";
-            // 
-            // testname
-            // 
-            this.testname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testname.Location = new System.Drawing.Point(20, 141);
-            this.testname.Name = "testname";
-            this.testname.Size = new System.Drawing.Size(282, 34);
-            this.testname.TabIndex = 15;
             // 
             // label9
             // 
@@ -304,14 +297,6 @@
             this.label7.Size = new System.Drawing.Size(244, 33);
             this.label7.TabIndex = 11;
             this.label7.Text = "Manage Diagnosis";
-            // 
-            // patname
-            // 
-            this.patname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patname.Location = new System.Drawing.Point(20, 70);
-            this.patname.Name = "patname";
-            this.patname.Size = new System.Drawing.Size(282, 34);
-            this.patname.TabIndex = 6;
             // 
             // label6
             // 
@@ -444,6 +429,24 @@
             this.logoutbtn.TabIndex = 15;
             this.logoutbtn.TabStop = false;
             // 
+            // Testname
+            // 
+            this.Testname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Testname.FormattingEnabled = true;
+            this.Testname.Location = new System.Drawing.Point(20, 141);
+            this.Testname.Name = "Testname";
+            this.Testname.Size = new System.Drawing.Size(282, 34);
+            this.Testname.TabIndex = 26;
+            // 
+            // patname
+            // 
+            this.patname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patname.FormattingEnabled = true;
+            this.patname.Location = new System.Drawing.Point(20, 68);
+            this.patname.Name = "patname";
+            this.patname.Size = new System.Drawing.Size(282, 34);
+            this.patname.TabIndex = 27;
+            // 
             // Diagnosis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -489,11 +492,9 @@
         private System.Windows.Forms.Button savebtn;
         private System.Windows.Forms.TextBox dcost;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox testname;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox patname;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox logoutbtn;
         private System.Windows.Forms.Panel panel1;
@@ -507,5 +508,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox Testname;
+        private System.Windows.Forms.ComboBox patname;
     }
 }
