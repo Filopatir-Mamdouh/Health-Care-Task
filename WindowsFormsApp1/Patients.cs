@@ -12,9 +12,17 @@ namespace WindowsFormsApp1
 {
     public partial class Patients : Form
     {
+        Functions con;
         public Patients()
         {
             InitializeComponent();
+            con = new Functions();
+            ShowPatients();
+        }
+        public void ShowPatients()
+        {
+            string query = "SELECT * FROM Patients";
+            patlist.DataSource= con.getData(query);
         }
 
         private void label2_Click(object sender, EventArgs e)
