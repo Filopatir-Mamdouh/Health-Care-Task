@@ -140,6 +140,7 @@
             this.label4.Size = new System.Drawing.Size(62, 27);
             this.label4.TabIndex = 9;
             this.label4.Text = "Reset";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox3
             // 

@@ -49,5 +49,11 @@ namespace WindowsFormsApp1
             else
                 MessageBox.Show("Invalid Data!!");
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            username.Text = "";
+            password.Text = "";
+        }
     }
 }
