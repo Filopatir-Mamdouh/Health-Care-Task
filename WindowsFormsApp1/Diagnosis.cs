@@ -19,6 +19,8 @@ namespace WindowsFormsApp1
             InitializeComponent();
             con = new Functions();
             ShowDiagnosis();
+            getPatients();
+            getTests();
         }
         public void ShowDiagnosis()
         {
@@ -39,7 +41,14 @@ namespace WindowsFormsApp1
             patname.ValueMember = con.getData(query).Columns["testid"].ToString();
             patname.DataSource = con.getData(query);
         }
-
+        public void getCost()
+        {
+            if (Testname.SelectedIndex != -1)
+            {
+                string query = "SELECT * FROM Tests WHERE testid = " + Testname.SelectedValue.ToString();
+                dcost.Text = con.getData(query).Columns["testcost"].ToString();
+            }
+        }
         private void clear()
         {
             patname.Text = "";
@@ -152,6 +161,11 @@ namespace WindowsFormsApp1
         private void close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Testname_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getCost();
         }
     }
 }
