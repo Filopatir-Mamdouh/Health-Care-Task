@@ -51,14 +51,7 @@ namespace WindowsFormsApp1
         int key = 0;
         private void testlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            testname.Text = testlist.SelectedRows[0].Cells[1].Value.ToString();
-            testcost.Text = testlist.SelectedRows[0].Cells[2].Value.ToString();
-            if (testname.Text == "")
-            {
-                key = 0;
-            }
-            else
-                key = Convert.ToInt32(testlist.SelectedRows[0].Cells[0].Value.ToString());
+
         }
 
         private void updatebtn_Click(object sender, EventArgs e)
