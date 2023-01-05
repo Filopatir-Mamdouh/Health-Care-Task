@@ -59,8 +59,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.close = new System.Windows.Forms.PictureBox();
             this.logoutbtn = new System.Windows.Forms.PictureBox();
-            this.Testname = new System.Windows.Forms.ComboBox();
-            this.patname = new System.Windows.Forms.ComboBox();
+            this.Test = new System.Windows.Forms.ComboBox();
+            this.patient = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlist)).BeginInit();
@@ -161,8 +161,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.patname);
-            this.panel3.Controls.Add(this.Testname);
+            this.panel3.Controls.Add(this.patient);
+            this.panel3.Controls.Add(this.Test);
             this.panel3.Controls.Add(this.result);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.dDate);
@@ -438,24 +438,24 @@
             this.logoutbtn.TabStop = false;
             this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
-            // Testname
+            // Test
             // 
-            this.Testname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Testname.FormattingEnabled = true;
-            this.Testname.Location = new System.Drawing.Point(20, 141);
-            this.Testname.Name = "Testname";
-            this.Testname.Size = new System.Drawing.Size(282, 34);
-            this.Testname.TabIndex = 26;
-            this.Testname.SelectedIndexChanged += new System.EventHandler(this.Testname_SelectedIndexChanged);
+            this.Test.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test.FormattingEnabled = true;
+            this.Test.Location = new System.Drawing.Point(20, 141);
+            this.Test.Name = "Test";
+            this.Test.Size = new System.Drawing.Size(282, 34);
+            this.Test.TabIndex = 26;
+            this.Test.SelectedIndexChanged += new System.EventHandler(this.Testname_SelectedIndexChanged);
             // 
-            // patname
+            // patient
             // 
-            this.patname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patname.FormattingEnabled = true;
-            this.patname.Location = new System.Drawing.Point(20, 68);
-            this.patname.Name = "patname";
-            this.patname.Size = new System.Drawing.Size(282, 34);
-            this.patname.TabIndex = 27;
+            this.patient.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patient.FormattingEnabled = true;
+            this.patient.Location = new System.Drawing.Point(20, 68);
+            this.patient.Name = "patient";
+            this.patient.Size = new System.Drawing.Size(282, 34);
+            this.patient.TabIndex = 27;
             // 
             // Diagnosis
             // 
@@ -518,7 +518,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox Testname;
-        private System.Windows.Forms.ComboBox patname;
+        private System.Windows.Forms.ComboBox Test;
+        private System.Windows.Forms.ComboBox patient;
     }
 }

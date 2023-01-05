@@ -30,29 +30,32 @@ namespace WindowsFormsApp1
         public void getPatients()
         {
             string query = "SELECT * FROM Patients";
-            patname.DisplayMember = con.getData(query).Columns["patname"].ToString();
-            patname.ValueMember = con.getData(query).Columns["patid"].ToString();
-            patname.DataSource = con.getData(query) ;
+            patient.DisplayMember = con.getData(query).Columns["patname"].ToString();
+            patient.ValueMember = con.getData(query).Columns["patid"].ToString();
+            patient.DataSource = con.getData(query) ;
         }
         public void getTests()
         {
             string query = "SELECT * FROM Tests";
-            patname.DisplayMember = con.getData(query).Columns["testname"].ToString();
-            patname.ValueMember = con.getData(query).Columns["testid"].ToString();
-            patname.DataSource = con.getData(query);
+            Test.DisplayMember = con.getData(query).Columns["testname"].ToString();
+            Test.ValueMember = con.getData(query).Columns["testid"].ToString();
+            Test.DataSource = con.getData(query);
         }
         public void getCost()
         {
-            if (Testname.SelectedIndex != -1)
+            if (Test.SelectedIndex != -1)
             {
-                string query = "SELECT * FROM Tests WHERE testid = " + Testname.SelectedValue.ToString();
-                dcost.Text = con.getData(query).Columns["testcost"].ToString();
+                string query = "SELECT * FROM Tests WHERE testid = " + Test.SelectedValue.ToString();
+                foreach (DataRow dr in con.getData(query).Rows)
+                {
+                    dcost.Text = dr["testcost"].ToString();
+                }
             }
         }
         private void clear()
         {
-            patname.Text = "";
-            Testname.SelectedIndex = -1;
+            patient.Text = "";
+            Test.SelectedIndex = -1;
             dcost.Text = "";
             result.Text = "";
             key = 0;
@@ -60,19 +63,19 @@ namespace WindowsFormsApp1
         private void savebtn_Click(object sender, EventArgs e)
         {
 
-            if (patname.SelectedIndex == -1 || Testname.SelectedIndex == -1 || result.Text == "")
+            if (patient.SelectedIndex == -1 || Test.SelectedIndex == -1 || result.Text == "")
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                int name = Convert.ToInt32(patname.SelectedValue.ToString()); ;
+                int name = Convert.ToInt32(patient.SelectedValue.ToString()); ;
                 string date = dDate.Value.ToString();
                 string r = result.Text;
-                int test = Convert.ToInt32(Testname.SelectedValue.ToString());
+                int test = Convert.ToInt32(Test.SelectedValue.ToString());
                 int cost = Convert.ToInt32(dcost.Text);
                 string query = "INSERT INTO Diagnosis Values( '{0}' , {1} , {2} , {3} , '{4}' )";
-                query = string.Format(query, date, name, test, cost, result);
+                query = string.Format(query, date, name, test, cost, r);
                 con.setData(query);
                 ShowDiagnosis();
                 MessageBox.Show("Diagnosis Added Sucessfully!!");
@@ -82,12 +85,12 @@ namespace WindowsFormsApp1
         int key = 0;
         private void dlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            patname.SelectedItem = dlist.SelectedRows[0].Cells[2].Value.ToString();
-            result.Text = dlist.SelectedRows[0].Cells[5].Value.ToString();
             dDate.Text = dlist.SelectedRows[0].Cells[1].Value.ToString();
+            patient.SelectedItem = dlist.SelectedRows[0].Cells[2].Value.ToString();
+            Test.SelectedItem = dlist.SelectedRows[0].Cells[3].Value.ToString();
             dcost.Text = dlist.SelectedRows[0].Cells[4].Value.ToString();
-            Testname.SelectedItem = dlist.SelectedRows[0].Cells[3].Value.ToString();
-            if (patname.Text == "")
+            result.Text = dlist.SelectedRows[0].Cells[5].Value.ToString();
+            if (patient.Text == "")
             {
                 key = 0;
             }
@@ -97,16 +100,16 @@ namespace WindowsFormsApp1
 
         private void updatebtn_Click(object sender, EventArgs e)
         {
-            if (patname.SelectedIndex == -1 || Testname.SelectedIndex == -1 || result.Text == "")
+            if (patient.SelectedIndex == -1 || Test.SelectedIndex == -1 || result.Text == "")
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                int name = Convert.ToInt32(patname.SelectedValue.ToString()); ;
+                int name = Convert.ToInt32(patient.SelectedValue.ToString()); ;
                 string date = dDate.Value.ToString();
                 string r = result.Text;
-                int test = Convert.ToInt32(Testname.SelectedValue.ToString());
+                int test = Convert.ToInt32(Test.SelectedValue.ToString());
                 int cost = Convert.ToInt32(dcost.Text);
                 string query = "UPDATE Diagnosis SET diagdate = '{0}' , patient = {1} , test = {2} , cost = {3} , result = '{4}' WHERE diagid = {5})";
                 query = string.Format(query, date, name, test, cost, result,key);
