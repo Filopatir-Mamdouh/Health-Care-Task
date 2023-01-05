@@ -125,7 +125,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                string query = "DELETE FROM Diagnosis WHERE patid=" + key;
+                string query = "DELETE FROM Diagnosis WHERE diagid=" + key;
                 con.setData(query);
                 ShowDiagnosis();
                 clear();
@@ -147,12 +147,6 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void diagbtn_Click(object sender, EventArgs e)
-        {
-            Diagnosis obj = new Diagnosis();
-            obj.Show();
-            this.Hide();
-        }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -167,6 +161,13 @@ namespace WindowsFormsApp1
         private void Testname_SelectedIndexChanged(object sender, EventArgs e)
         {
             getCost();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Patients obj = new Patients();
+            obj.Show();
+            this.Hide();
         }
     }
 }
