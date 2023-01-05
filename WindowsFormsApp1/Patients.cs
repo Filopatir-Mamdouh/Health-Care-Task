@@ -53,5 +53,20 @@ namespace WindowsFormsApp1
                 clear();
             }
         }
+        int key = 0;
+        private void patlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            patname.Text= patlist.SelectedRows[0].Cells[1].Value.ToString();
+            patgen.Text = patlist.SelectedRows[0].Cells[2].Value.ToString();
+            DOB.Text = patlist.SelectedRows[0].Cells[3].Value.ToString();
+            patphone.Text = patlist.SelectedRows[0].Cells[4].Value.ToString();
+            patadd.Text = patlist.SelectedRows[0].Cells[5].Value.ToString();
+            if (patname.Text == "")
+            {
+                key = 0;
+            }
+            else
+                key= Convert.ToInt32(patlist.SelectedRows[0].Cells[0].Value.ToString());
+        }
     }
 }
