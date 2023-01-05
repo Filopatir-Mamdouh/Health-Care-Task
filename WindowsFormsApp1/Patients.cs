@@ -36,16 +36,17 @@ namespace WindowsFormsApp1
         {
             string name = patname.Text;
             string date = DOB.Value.ToString();
-            string gen= patgen.SelectedItem.ToString();
+            string gen = "";
             string phone = patphone.Text;
             string add = patadd.Text;
-            if (name== "" || gen=="" || phone == "" || add == "")
+            if (name== "" || phone == "" || add == "" || patgen.SelectedIndex == -1)
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                string query = "INSERT INTO Patients Values('{0}','{1}','{2}','{3},'{4}')";
+                gen=patgen.SelectedItem.ToString();
+                string query = "INSERT INTO Patients Values( '{0}' , '{1}' , '{2}' ,'{3}' ,' {4}' )";
                 query= string.Format(query, name, gen, date, phone, add);
                 con.setData(query);
                 ShowPatients();
@@ -73,16 +74,16 @@ namespace WindowsFormsApp1
         {
             string name = patname.Text;
             string date = DOB.Value.ToString();
-            string gen = patgen.SelectedItem.ToString();
             string phone = patphone.Text;
             string add = patadd.Text;
-            if (name == "" || gen == "" || phone == "" || add == "" || key == 0)
+            if (name == "" || patgen.SelectedIndex == -1 || phone == "" || add == "" || key == 0)
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                string query = "UPDATE INTO Patients SET patname= '{0}', patgen = '{1}', patdob= '{2}', patphone= '{3}, pataddress= '{4}' WHERE patid = {5}";
+                string gen = patgen.SelectedItem.ToString();
+                string query = "UPDATE Patients SET patname= '{0}', patgen = '{1}', patdob= '{2}', patphone= '{3}', pataddress= '{4}' WHERE patid = {5}";
                 query = string.Format(query, name, gen, date, phone, add , key);
                 con.setData(query);
                 ShowPatients();

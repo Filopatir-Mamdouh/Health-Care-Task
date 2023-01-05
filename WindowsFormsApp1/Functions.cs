@@ -36,8 +36,8 @@ namespace WindowsFormsApp1
             {
                 con.Open();
             }
-            cmd.CommandText= constr;
-            r= cmd.ExecuteNonQuery();
+            cmd.CommandText= Query;
+            r = cmd.ExecuteNonQuery();
             con.Close();
             return r;
         }
