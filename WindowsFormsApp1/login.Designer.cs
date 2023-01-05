@@ -93,6 +93,7 @@
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(282, 34);
             this.username.TabIndex = 4;
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // password
             // 
@@ -123,6 +124,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // guna2Elipse2
             // 
@@ -148,6 +150,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
