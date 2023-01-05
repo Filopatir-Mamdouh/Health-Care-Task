@@ -58,23 +58,23 @@ namespace WindowsFormsApp1
         }
         private void savebtn_Click(object sender, EventArgs e)
         {
-            string name = patname.Text;
-            string date = DOB.Value.ToString();
-            string gen = "";
-            string phone = patphone.Text;
-            string add = patadd.Text;
-            if (name == "" || phone == "" || add == "" || patgen.SelectedIndex == -1)
+
+            if (patname.SelectedIndex == -1 || Testname.SelectedIndex == -1 || result.Text == "")
             {
                 MessageBox.Show("Missing Data!!");
             }
             else
             {
-                gen = patgen.SelectedItem.ToString();
-                string query = "INSERT INTO Diagnosis Values( '{0}' , '{1}' , '{2}' ,'{3}' ,' {4}' )";
-                query = string.Format(query, name, gen, date, phone, add);
+                int name = Convert.ToInt32(patname.SelectedValue.ToString()); ;
+                string date = dDate.Value.ToString();
+                string r = result.Text;
+                int test = Convert.ToInt32(Testname.SelectedValue.ToString());
+                int cost = Convert.ToInt32(dcost.Text);
+                string query = "INSERT INTO Diagnosis Values( '{0}' , {1} , {2} , {3} , '{4}' )";
+                query = string.Format(query, date, name, test, cost, result);
                 con.setData(query);
                 ShowDiagnosis();
-                MessageBox.Show("Patient Added Sucessfully!!");
+                MessageBox.Show("Diagnosis Added Sucessfully!!");
                 clear();
             }
         }
