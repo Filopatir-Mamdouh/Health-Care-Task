@@ -37,40 +37,40 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Testbtn = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.diagbtn = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.logoutbtn = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.username = new System.Windows.Forms.TextBox();
+            this.patname = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.patgen = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.patphone = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.patadd = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.savebtn = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.updatebtn = new System.Windows.Forms.Button();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.button3 = new System.Windows.Forms.Button();
+            this.deletebtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -94,9 +94,9 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.diagbtn);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.Testbtn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 90);
@@ -137,15 +137,15 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Tests";
             // 
-            // pictureBox2
+            // Testbtn
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.chemistry;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 134);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.Testbtn.Image = global::WindowsFormsApp1.Properties.Resources.chemistry;
+            this.Testbtn.Location = new System.Drawing.Point(18, 134);
+            this.Testbtn.Name = "Testbtn";
+            this.Testbtn.Size = new System.Drawing.Size(90, 65);
+            this.Testbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Testbtn.TabIndex = 5;
+            this.Testbtn.TabStop = false;
             // 
             // label4
             // 
@@ -158,15 +158,15 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Diagnosis";
             // 
-            // pictureBox3
+            // diagbtn
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.diagnosis;
-            this.pictureBox3.Location = new System.Drawing.Point(18, 250);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(90, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.diagbtn.Image = global::WindowsFormsApp1.Properties.Resources.diagnosis;
+            this.diagbtn.Location = new System.Drawing.Point(18, 250);
+            this.diagbtn.Name = "diagbtn";
+            this.diagbtn.Size = new System.Drawing.Size(90, 65);
+            this.diagbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diagbtn.TabIndex = 7;
+            this.diagbtn.TabStop = false;
             // 
             // label5
             // 
@@ -189,15 +189,15 @@
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox5
+            // logoutbtn
             // 
-            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox5.Location = new System.Drawing.Point(49, 21);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(57, 43);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
+            this.logoutbtn.Image = global::WindowsFormsApp1.Properties.Resources.logout;
+            this.logoutbtn.Location = new System.Drawing.Point(49, 21);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(57, 43);
+            this.logoutbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoutbtn.TabIndex = 11;
+            this.logoutbtn.TabStop = false;
             // 
             // panel2
             // 
@@ -212,32 +212,32 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.DOB);
+            this.panel3.Controls.Add(this.deletebtn);
+            this.panel3.Controls.Add(this.updatebtn);
+            this.panel3.Controls.Add(this.savebtn);
+            this.panel3.Controls.Add(this.patadd);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.patphone);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.patgen);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.username);
+            this.panel3.Controls.Add(this.patname);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(14, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1072, 183);
             this.panel3.TabIndex = 0;
             // 
-            // username
+            // patname
             // 
-            this.username.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(20, 70);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(282, 34);
-            this.username.TabIndex = 6;
+            this.patname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patname.Location = new System.Drawing.Point(20, 70);
+            this.patname.Name = "patname";
+            this.patname.Size = new System.Drawing.Size(282, 34);
+            this.patname.TabIndex = 6;
             // 
             // label6
             // 
@@ -261,14 +261,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Manage Patients";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(329, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 34);
-            this.textBox1.TabIndex = 13;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -280,13 +272,13 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Patients Date of Birth";
             // 
-            // textBox2
+            // patgen
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(20, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 34);
-            this.textBox2.TabIndex = 15;
+            this.patgen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patgen.Location = new System.Drawing.Point(20, 141);
+            this.patgen.Name = "patgen";
+            this.patgen.Size = new System.Drawing.Size(282, 34);
+            this.patgen.TabIndex = 15;
             // 
             // label9
             // 
@@ -299,13 +291,13 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Patients Gender";
             // 
-            // textBox3
+            // patphone
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(329, 141);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 34);
-            this.textBox3.TabIndex = 17;
+            this.patphone.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patphone.Location = new System.Drawing.Point(329, 141);
+            this.patphone.Name = "patphone";
+            this.patphone.Size = new System.Drawing.Size(282, 34);
+            this.patphone.TabIndex = 17;
             // 
             // label10
             // 
@@ -318,14 +310,14 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Patients Phone";
             // 
-            // textBox4
+            // patadd
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(626, 70);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(282, 105);
-            this.textBox4.TabIndex = 19;
+            this.patadd.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patadd.Location = new System.Drawing.Point(626, 70);
+            this.patadd.Multiline = true;
+            this.patadd.Name = "patadd";
+            this.patadd.Size = new System.Drawing.Size(282, 105);
+            this.patadd.TabIndex = 19;
             // 
             // label11
             // 
@@ -341,50 +333,50 @@
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 50;
-            this.guna2Elipse2.TargetControl = this.button1;
+            this.guna2Elipse2.TargetControl = this.savebtn;
             // 
-            // button1
+            // savebtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(942, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 44);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.savebtn.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.savebtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebtn.Location = new System.Drawing.Point(942, 18);
+            this.savebtn.Name = "savebtn";
+            this.savebtn.Size = new System.Drawing.Size(105, 44);
+            this.savebtn.TabIndex = 20;
+            this.savebtn.Text = "Save";
+            this.savebtn.UseVisualStyleBackColor = false;
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 50;
-            this.guna2Elipse1.TargetControl = this.button2;
+            this.guna2Elipse1.TargetControl = this.updatebtn;
             // 
-            // button2
+            // updatebtn
             // 
-            this.button2.BackColor = System.Drawing.Color.CadetBlue;
-            this.button2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(942, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 44);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.updatebtn.BackColor = System.Drawing.Color.CadetBlue;
+            this.updatebtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebtn.Location = new System.Drawing.Point(942, 75);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(105, 44);
+            this.updatebtn.TabIndex = 21;
+            this.updatebtn.Text = "Update";
+            this.updatebtn.UseVisualStyleBackColor = false;
             // 
             // guna2Elipse3
             // 
             this.guna2Elipse3.BorderRadius = 50;
-            this.guna2Elipse3.TargetControl = this.button3;
+            this.guna2Elipse3.TargetControl = this.deletebtn;
             // 
-            // button3
+            // deletebtn
             // 
-            this.button3.BackColor = System.Drawing.Color.Coral;
-            this.button3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(942, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 44);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.deletebtn.BackColor = System.Drawing.Color.Coral;
+            this.deletebtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.Location = new System.Drawing.Point(942, 129);
+            this.deletebtn.Name = "deletebtn";
+            this.deletebtn.Size = new System.Drawing.Size(105, 44);
+            this.deletebtn.TabIndex = 22;
+            this.deletebtn.Text = "Delete";
+            this.deletebtn.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -459,13 +451,27 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // DOB
+            // 
+            this.DOB.Checked = true;
+            this.DOB.FillColor = System.Drawing.Color.Gray;
+            this.DOB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DOB.Location = new System.Drawing.Point(329, 68);
+            this.DOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOB.Name = "DOB";
+            this.DOB.Size = new System.Drawing.Size(282, 36);
+            this.DOB.TabIndex = 23;
+            this.DOB.Value = new System.DateTime(2023, 1, 5, 3, 9, 21, 261);
+            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 626);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.logoutbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -474,10 +480,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Testbtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutbtn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -498,31 +504,31 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox diagbtn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox Testbtn;
+        private System.Windows.Forms.PictureBox logoutbtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox patadd;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox patphone;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox patgen;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox patname;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button deletebtn;
+        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button savebtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DOB;
     }
 }
